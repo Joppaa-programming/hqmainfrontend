@@ -6,6 +6,11 @@ const nextConfig = {
             protocol: 'https',
             hostname: 'res.cloudinary.com',
             pathname: '**',
+          },  
+          {
+            protocol: 'https',
+            hostname: 'originallyblackbucket.s3.eu-west-1.amazonaws.com',
+            pathname: '**',
           },
         ],
       },
