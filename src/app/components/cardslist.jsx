@@ -6,7 +6,7 @@ import Card from './cards'
             "info": "Plan ahead and get your Jollof to-go, from HQ to skip queue.",
             "cta": {
                 "text": "ORDER COLLECT",
-                "link": "OPENS IN A NEW WINDOW"
+                "link": "tel:01614255080"
             }
         },
         {
