@@ -1,15 +1,16 @@
 import Image from 'next/image'
 import React from 'react'
 
-export default function Imagetext({imgSrc}) {
+export default function Imagetext({ imgSrc }) {
     return (
-        <div>        
-             <Image
-            src={imgSrc}
-            fill
-            objectFit='cover'
-            alt="Picture of the author"
-        />
-        </div>
+        <>
+            <Image
+                src={imgSrc}
+                fill
+                sizes="100vw"
+                style={{ objectFit: "cover" }}
+                alt="Picture of the author"
+            />
+        </>
     )
 }

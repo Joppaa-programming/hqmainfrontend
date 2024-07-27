@@ -11,8 +11,9 @@ export default function Nav() {
    <Link href={"/"} className=' h-[55px] w-[55px] relative'> 
              <Image
       src="/hqlogo.png"
-      fill="true"
-      objectFit='cover'
+      fill
+        sizes="55px"
+      style={{objectFit:"cover"}}
       alt="Picture of the author"
     /> 
    </Link>
@@ -20,8 +21,9 @@ export default function Nav() {
    <div className=' h-[40px] w-[40px] relative'> 
              <Image
       src="/ngflag.png"
-      fill="true"
-      objectFit='cover'
+      fill
+        sizes="40px"
+      style={{objectFit:"cover"}}
       alt="Picture of the author"
     /> 
    </div>
