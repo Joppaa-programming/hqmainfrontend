@@ -31,7 +31,7 @@ export default function Menubar() {
 
             {menuHeading.map((item, index) =>
             (
-                <div onClick={() => (  handleSearch(item))} className='w-auto p-2  text-sm' key={index}>{item}</div>)
+                <div onClick={() => (  handleSearch(item))} className='w-auto p-2 cursor-pointer  text-sm' key={index}>{item}</div>)
             )}
 
 
