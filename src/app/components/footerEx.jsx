@@ -37,7 +37,7 @@ export default function Footer() {
         < div className='footer px-5  '>
             <div id='footer-main' className='pt-20 pb-12  gap-16 items-start content-center py-8 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2 lg:py-16 lg:px-6" '>
                 <div className=''>
-                    <h2 className='text-3xl text-blue-400 font-bold sm:text-5xl'>
+                    <h2 className='text-3xl text-green-400 font-bold sm:text-5xl'>
                         Subscribe
                     </h2>
                     <p className='text-base'>
@@ -62,7 +62,7 @@ export default function Footer() {
                         <div className=" buttons py-5 mt-3 mb-3">
                             <button
                                 type="submit"
-                                className=" justify-center text-xs h-9   px-8 mb-5  font-bold rounded-full text-white bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-blue-500 focus:ring-offset-blue-200 active:bg-blue-600 transition duration-150 ease-in-out">
+                                className=" justify-center text-xs h-9   px-8 mb-5  font-bold rounded-full text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-green-500 focus:ring-offset-green-200 active:bg-green-600 transition duration-150 ease-in-out">
                                 Sign up Now!
                             </button></div>
                     </form>
@@ -70,47 +70,45 @@ export default function Footer() {
                     {error && <div className="mt-6 text-red-600">Error: {error.message}</div>}
                 </div>
                 <div className='md:pl-10'>
-                    <h2 className='text-3xl sm:text-5xl text-blue-400 font-bold'>WORLD</h2>
-                    <p className='mt-3'> YALL (Youth Association of Land Lords)<br></br>
-                        Kombo North West Coast Region,<br></br>
-                        The Gambia</p>
-                    <span className='mt-3'><p>YALL</p>
-                    +44 7359 042981  | +220 521 1488   <br/>|
-                        +220 798 3754
+                    <h2 className='text-3xl sm:text-5xl text-green-400 font-bold'>WORLD</h2>
+                    <p className='mt-3'> HQ (H.Q. Nigerian Restaurant) <br/> 317 Wilmslow Rd, Fallowfield, <br/>
+                        Kombo North West Coast Region,<br/>Manchester<br/>
+                        <br />M14 6NW </p>
+                    <span className='mt-3'><p>HQ</p>
+                        0161 425 5080
                     </span>
-                    <div className='flex pt-3 justify-start text-center text-blue-400'>
+                    <div className='flex pt-3 justify-start text-center text-green-400'>
                         <FaFacebookF className='text-xl mr-5' /><FaInstagram className='text-xl mr-5 ' /><FaLinkedinIn className='text-xl mr-5' />
                     </div>
                 </div>
             </div>
-            <div id='footer-bottom' className='border-t-2 lg:flex lg:justify-center lg:text-center'>
+            <div id='footer-bottom' className='border-t-2 lg:flex text-gray-500 lg:justify-center lg:text-center'>
 
-                <div className='text-xs my-4 text-gray-500 lg:flex px-2 align-top justify-center'>
-                    <a href="#contactus">
-                        <div className='flex md:px-5 content-center md:align-middle text-blue-400' >
+                <div className='text-xs my-4  lg:flex px-2 align-top items-center  justify-center'>
+                    <Link href="#contactus">
+                        <div className='flex md:px-5 content-center md:align-middle text-green-400' >
                             <h2 className='text-xl text-center font-bold'>
-                                YALL
+                                HQ 
                             </h2>
-                            <span className='text-xl font-bold lg:grid lg:grid-cols-2 '>
-                                |
+                            <span className='text-xl font-bold lg:grid p-1 lg:grid-cols-2 '>
+                                | 
                             </span>
                             <p className='text-xl font-bold'>
                                 be ready.
                             </p>
                         </div>
-                    </a>
-                    <p className=''> Youth Association Of Landlords Limited Copyright © 2023 </p>
-                    <span className='px-3 '> WhatsApp : +44 7359 042981 | +220 521 1488   <br/>|
-                        +220 798 3754 </span>
+                    </Link>
+                    <p className=''> Headquaters Manchester © 2024 </p>
+                    <span className='px-3 '> WhatsApp : 07424622616 </span>
                     <Link href={'https://zabbu.org/'} className='px-3'> Developed By Zabbu Marketing </Link>
-                    <a href="/"><h2 className='text-xs px-2 text-black '>Privacy Policy
-                    </h2 > </a>
+                    <Link href="/"><h2 className='text-xs px-2  '>Privacy Policy
+                    </h2 > </Link>
 
-                    <a href="/">
-                        <h2 className='text-xs px-2 text-black '>
-                            Youth Association Of Landlords
+                    <Link href="https://www.originally.black">
+                        <h2 className='text-xs px-2 text-purple-400  '>
+                            www.Originally.Black
                         </h2>
-                    </a>
+                    </Link>
                 </div>
 
 

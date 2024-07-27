@@ -1,6 +1,6 @@
 import React from 'react'
 import Nav from './nav'
-import Footer from './footer'
+import Footer from './footerEx'
 
 export default function Content({children}) {
   return (

@@ -41,7 +41,7 @@ export default function Nav() {
         </div>
 
       </div>
-     {navbar && <div id='menu' className='left-4 absolute top-13 rounded-md bg-black max-w-[350px] shadow-sm flex  h-[300px] flex-col items-center z-20'>
+     {navbar && <div id='menu' className='left-4 absolute top-13 rounded-md bg-black max-w-[350px] w-[350px] shadow-sm flex  h-[300px] flex-col items-center z-20'>
       
         <div className='p-4 flex flex-col gap-2 '>
         <h1 className='px-2 text-xl'> Headquater </h1>
