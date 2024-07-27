@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 import addData from '../data/firebase';
-import { FaFacebookF, FaInstagram, FaLinkedinIn } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn,FaTiktok } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -78,7 +78,7 @@ export default function Footer() {
                         0161 425 5080
                     </span>
                     <div className='flex pt-3 justify-start text-center text-green-400'>
-                        <FaFacebookF className='text-xl mr-5' /><FaInstagram className='text-xl mr-5 ' /><FaLinkedinIn className='text-xl mr-5' />
+                    <Link href={'https://www.facebook.com/hqmanchester'}><FaFacebookF className='text-xl mr-5' /></Link> <Link href={'https://www.instagram.com/hqmanchester/'}><FaInstagram className='text-xl mr-5 ' /></Link>  <Link href={'https://www.tiktok.com/@hqmanchester/'}><FaTiktok className='text-xl mr-5' /></Link>
                     </div>
                 </div>
             </div>
@@ -94,7 +94,7 @@ export default function Footer() {
                                 |
                             </span>
                             <p className='text-xl font-bold'>
-                                be ready.
+                                Be Ready .
                             </p>
                         </div>
                     </Link>

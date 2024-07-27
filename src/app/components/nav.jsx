@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
 export default function Nav() {
   const [navbar, setNavbar] = useState(false);
   const handleNav = () => {
@@ -29,7 +29,7 @@ export default function Nav() {
             alt="Picture of the author"
           />
         </Link>
-        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24 w-44  uppercase text-center px-4 py-2 rounded-sm'   > Order online</Link><div></div>
+        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24 w-44  uppercase text-center px-4 py-1 rounded-sm'   > Order online</Link><div></div>
         <div onClick={handleNav} className=' h-[40px] w-[40px] relative'>
           <Image
             src="/ngflag.png"
@@ -50,8 +50,8 @@ export default function Nav() {
           <Link onClick={handleNav}  href={orderlink} target="_blank" className='px-4 py-2 hover:font-semibold bg-red-600 rounded-sm  uppercase '   > Order online</Link>
           <Link onClick={handleNav}  href={reserveLink} target="_blank" className=' hover:font-semibold px-4 py-2 mt-1 bg-green-500 rounded-md uppercase '   > Reserve a table</Link>
           <div className='flex flex-row text-xl p-4 gap-4 mt-5'>
-            <Link onClick={handleNav}  href={"https://www.instagram.com/hqmanchester/"} ><FaInstagram /></Link>
-            <Link onClick={handleNav}  href={""} ><FaTiktok /></Link>
+          <Link onClick={handleNav}  href={"https://www.facebook.com/hqmanchester"}target="_blank" ><FaFacebook /></Link><Link onClick={handleNav}  href={"https://www.instagram.com/hqmanchester/"} target="_blank"><FaInstagram /></Link>
+            <Link onClick={handleNav}  href={"https://www.tiktok.com/@hqmanchester/"} target="_blank"><FaTiktok /></Link>
           </div>
         </div>
         <span onClick={handleNav} className='text-white absolute text-xs  cursor-pointer top-5 right-12'>X close</span>
