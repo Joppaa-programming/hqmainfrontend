@@ -8,7 +8,7 @@ export default function Hero() {
     <div className="h-screen relative  bg-cover bg-origin-border flex flex-col justify-center items-center w-screen bg-hero2" >
       <Imagetext imgSrc={'/hero2.png'} />
       <div className='absolute flex flex-col justify-center items-center'>
-        <div className="pb-2"><h1 className="  font-bold text-5xl md:text-6xl  "> Home of
+        <div className="pb-2 text-center"><h1 className="  font-bold text-5xl md:text-6xl  "> Home of
           nigerian <br></br>  cuisine</h1>
           <p className="p-3 text-lg">in Manchester </p></div>
         <Link href={orderlink} target="_blank" className="bg-white text-black text-xl py-2 px-4 uppercase">
