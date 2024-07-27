@@ -34,7 +34,7 @@ export default function Footer() {
         }
     };
     return (
-        < div className='footer px-5  '>
+        < div className='footer px-5 mb-6 '>
             <div id='footer-main' className='pt-20 pb-12  gap-16 items-start content-center py-8 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2 lg:py-16 lg:px-6" '>
                 <div className=''>
                     <h2 className='text-3xl text-green-400 font-bold sm:text-5xl'>
@@ -44,7 +44,7 @@ export default function Footer() {
                         Subscribe to our newsletter to
                         stay in touch with the latest.
                     </p>
-                    <form className='flex flex-col mb-5 ' onSubmit={handleSubmit}>
+                    {submitted == false ? (<form className='flex flex-col mb-5 ' onSubmit={handleSubmit}>
                         <label className=' pt-3 text-xs'>
                             Your work email
                         </label>
@@ -56,7 +56,7 @@ export default function Footer() {
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                             required
-                            className="block w-full py-3 px-4  bg-transparent placeholder-black text-black  border-black-600 border-b-2 "
+                            className="block w-full py-3 px-4  bg-transparent    border-black-600 border-b-2 "
                             placeholder=""
                         />
                         <div className=" buttons py-5 mt-3 mb-3">
@@ -65,14 +65,14 @@ export default function Footer() {
                                 className=" justify-center text-xs h-9   px-8 mb-5  font-bold rounded-full text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-green-500 focus:ring-offset-green-200 active:bg-green-600 transition duration-150 ease-in-out">
                                 Sign up Now!
                             </button></div>
-                    </form>
-                    {submitted && <div className="mt-6 text-black">Thank you for Subscribing</div>}
+                    </form>) : <div className="mt-6 text-green-200">Thank you for Subscribing</div>
+                    }
                     {error && <div className="mt-6 text-red-600">Error: {error.message}</div>}
                 </div>
                 <div className='md:pl-10'>
-                    <h2 className='text-3xl sm:text-5xl text-green-400 font-bold'>WORLD</h2>
-                    <p className='mt-3'> HQ (H.Q. Nigerian Restaurant) <br/> 317 Wilmslow Rd, Fallowfield, <br/>
-                        Kombo North West Coast Region,<br/>Manchester<br/>
+                    <h2 className='text-3xl sm:text-5xl text-green-400 font-bold'>MANC</h2>
+                    <p className='mt-3'> HQ (H.Q. Nigerian Restaurant) <br /> 317 Wilmslow Rd, Fallowfield, <br />
+                        Kombo North West Coast Region,<br />Manchester<br />
                         <br />M14 6NW </p>
                     <span className='mt-3'><p>HQ</p>
                         0161 425 5080
@@ -84,14 +84,14 @@ export default function Footer() {
             </div>
             <div id='footer-bottom' className='border-t-2 lg:flex text-gray-500 lg:justify-center lg:text-center'>
 
-                <div className='text-xs my-4  lg:flex px-2 align-top items-center  justify-center'>
+                <div className='text-xs my-4 flex flex-col lg:flex px-2 gap-1 align-top items-start  justify-center'>
                     <Link href="#contactus">
                         <div className='flex md:px-5 content-center md:align-middle text-green-400' >
                             <h2 className='text-xl text-center font-bold'>
-                                HQ 
+                                HQ
                             </h2>
                             <span className='text-xl font-bold lg:grid p-1 lg:grid-cols-2 '>
-                                | 
+                                |
                             </span>
                             <p className='text-xl font-bold'>
                                 be ready.
@@ -99,13 +99,13 @@ export default function Footer() {
                         </div>
                     </Link>
                     <p className=''> Headquaters Manchester © 2024 </p>
-                    <span className='px-3 '> WhatsApp : 07424622616 </span>
-                    <Link href={'https://zabbu.org/'} className='px-3'> Developed By Zabbu Marketing </Link>
-                    <Link href="/"><h2 className='text-xs px-2  '>Privacy Policy
+                    <span className=''> WhatsApp : 07424622616 </span>
+                    <Link href={'https://zabbu.org/'} className=''> Developed By Zabbu Marketing </Link>
+                    <Link href="/"><h2 className='text-xs '>Privacy Policy
                     </h2 > </Link>
 
                     <Link href="https://www.originally.black">
-                        <h2 className='text-xs px-2 text-purple-400  '>
+                        <h2 className='text-xs uppercase pt-2  text-white  '>
                             www.Originally.Black
                         </h2>
                     </Link>

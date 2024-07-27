@@ -6,7 +6,7 @@ import { FaInstagram, FaTiktok } from "react-icons/fa";
 export default function Nav() {
   const [navbar, setNavbar] = useState(false);
   const handleNav = () => {
-      setNavbar(!navbar);
+    setNavbar(!navbar);
   }
   const orderlink = "https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781"
   const reserveLink = "https://www.pronto-food-online.com/ordering/restaurant/menu/reservation?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&reservation=true&glfa_cid=1277109742.1603227119&glfa_t=1603227121089"
@@ -29,7 +29,7 @@ export default function Nav() {
             alt="Picture of the author"
           />
         </Link>
-        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute right-24 w-44 h-6 uppercase text-center rounded-sm'   > Order online</Link><div></div>
+        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24 w-44  uppercase text-center px-4 py-2 rounded-sm'   > Order online</Link><div></div>
         <div onClick={handleNav} className=' h-[40px] w-[40px] relative'>
           <Image
             src="/ngflag.png"
@@ -41,20 +41,20 @@ export default function Nav() {
         </div>
 
       </div>
-     {navbar && <div id='menu' className='left-4 absolute top-13 rounded-md bg-black max-w-[350px] w-[350px] shadow-sm flex  h-[300px] flex-col items-center z-20'>
-      
-        <div className='p-4 flex flex-col gap-2 '>
-        <h1 className='px-2 text-xl'> Headquater </h1>
+      {navbar && <div id='menu' className=' absolute top-[72px] left-3 rounded-md bg-black  w-screen shadow-sm flex max-w-[660px] h-[460px] flex-col items-start z-20'>
+
+        <div className='p-4 flex flex-col gap-4 font-bold justify-center '>
+          <h1 className='px-2 text-sm mb-3'> Headquater </h1>
           {menuItems.map(([text, url], i) => (
-            <Link key={i} href={url} className='hover:text-green-400 focus:underline underline-offset-8 px-2 '>{text}</Link>))}
-          <Link href={orderlink} target="_blank" className=' hover:font-semibold bg-red-600 rounded-sm px-2 uppercase '   > Order online</Link>
-          <Link href={reserveLink} target="_blank" className=' hover:font-semibold px-2 mt-1 bg-green-500 rounded-md uppercase '   > Reserve a table</Link>
-          <div className='flex flex-row text-xl p-4 gap-4'>
-            <Link href={"https://www.instagram.com/hqmanchester/"} ><FaInstagram /></Link>
-            <Link href={""} ><FaTiktok /></Link>
+            <Link onClick={handleNav} key={i} href={url} className='hover:text-green-400 focus:underline underline-offset-8 px-2 text-lg '> {text}</Link>))}
+          <Link onClick={handleNav}  href={orderlink} target="_blank" className='px-4 py-2 hover:font-semibold bg-red-600 rounded-sm  uppercase '   > Order online</Link>
+          <Link onClick={handleNav}  href={reserveLink} target="_blank" className=' hover:font-semibold px-4 py-2 mt-1 bg-green-500 rounded-md uppercase '   > Reserve a table</Link>
+          <div className='flex flex-row text-xl p-4 gap-4 mt-5'>
+            <Link onClick={handleNav}  href={"https://www.instagram.com/hqmanchester/"} ><FaInstagram /></Link>
+            <Link onClick={handleNav}  href={""} ><FaTiktok /></Link>
           </div>
         </div>
-        <span onClick={handleNav} className='text-white absolute bottom-3 right-4'>X close</span>
+        <span onClick={handleNav} className='text-white absolute text-xs  cursor-pointer top-5 right-12'>X close</span>
       </div>}
     </div>
   )

@@ -8,14 +8,14 @@ import { getFirestore, collection, doc, FieldValue, setDoc, addDoc } from 'fireb
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-    apiKey: "AIzaSyAcO3ux44Mn5Ee5RVdSwD3mafo03VsGtu4",
-    authDomain: "socialcommerce-34e83.firebaseapp.com",
-    projectId: "socialcommerce-34e83",
-    storageBucket: "socialcommerce-34e83.appspot.com",
-    messagingSenderId: "905955350443",
-    appId: "1:905955350443:web:7f3a5ec635744623fee4ee",
-    measurementId: "G-TRF2YKGHQD",
-};
+    apiKey: "AIzaSyBa3WWzP0l0Y2gRmYZGyk3C1NTpk0wbu5k",
+    authDomain: "hqmanchester-f0b69.firebaseapp.com",
+    projectId: "hqmanchester-f0b69",
+    storageBucket: "hqmanchester-f0b69.appspot.com",
+    messagingSenderId: "1071321121492",
+    appId: "1:1071321121492:web:2916cba53af93c0b78f141",
+    measurementId: "G-BTLKLHMKYR"
+  };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
