@@ -10,7 +10,7 @@ export default function Menuhero() {
             <Imagetext imgSrc={'/hero2.png'} />
             <div className='absolute flex flex-col justify-center items-center'>
                 <h1 className="  font-bold text-4xl md:text-6xl  "> HQ Menu </h1>
-                <p className="p-3 text-lg">in Manchester </p>
+                <p className="p-3 text-lg"> Manchester  </p>
                 <Link href={orderlink} target="_blank" className="bg-white text-black text-xl py-2 px-4 uppercase">
                     Order online
                 </Link>

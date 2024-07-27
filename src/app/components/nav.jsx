@@ -1,39 +1,61 @@
+'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import React from 'react'
-
+import React, { useState } from 'react'
+import { FaInstagram, FaTiktok } from "react-icons/fa";
 export default function Nav() {
-
+  const [navbar, setNavbar] = useState(false);
+  const handleNav = () => {
+      setNavbar(!navbar);
+  }
   const orderlink = "https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781"
   const reserveLink = "https://www.pronto-food-online.com/ordering/restaurant/menu/reservation?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&reservation=true&glfa_cid=1277109742.1603227119&glfa_t=1603227121089"
+  const menuItems = [
+    ['Menu', '/menu'],
+    ['About us - tbc', '/'],
+    ['Call us', 'tel:01614255080'],
+    // ['Order online', orderlink],
+    // ['Reserve a table', reserveLink],
+  ]
   return (
-   <> <div className='px-6 overflow-hidden shadow-lg bg-navImage flex flex-row h-[70px] relative w-full items-center justify-between'>
-   <Link href={"/"} className=' h-[55px] w-[55px] relative'> 
-             <Image
-      src="/hqlogo.png"
-      fill
-        sizes="55px"
-      style={{objectFit:"cover"}}
-      alt="Picture of the author"
-    /> 
-   </Link>
-   <Link href={orderlink} target="_blank" className=' bg-red-600 mx-3 w-44 h-6 uppercase text-center'   > Order online</Link>
-   <Link href={'/menu'} className=' h-[40px] w-[40px] relative'> 
-             <Image
-      src="/ngflag.png"
-      fill
-        sizes="40px"
-      style={{objectFit:"cover"}}
-      alt="Picture of the author"
-    /> 
-   </Link>
-   
+    <div className=''>
+      <div className=' overflow-hidden shadow-lg bg-navImage flex flex-row h-[70px] px-6 relative w-screen items-center justify-between '>
+        <Link href={"/"} className=' h-[55px] w-[55px] relative'>
+          <Image
+            src="/hqlogo.png"
+            fill
+            sizes="55px"
+            style={{ objectFit: "cover" }}
+            alt="Picture of the author"
+          />
+        </Link>
+        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute right-24 w-44 h-6 uppercase text-center rounded-sm'   > Order online</Link><div></div>
+        <div onClick={handleNav} className=' h-[40px] w-[40px] relative'>
+          <Image
+            src="/ngflag.png"
+            fill
+            sizes="40px"
+            style={{ objectFit: "cover" }}
+            alt="Picture of the author"
+          />
+        </div>
+
+      </div>
+     {navbar && <div id='menu' className='left-4 absolute top-13 rounded-md bg-black max-w-[350px] shadow-sm flex  h-[300px] flex-col items-center z-20'>
+      
+        <div className='p-4 flex flex-col gap-2 '>
+        <h1 className='px-2 text-xl'> Headquater </h1>
+          {menuItems.map(([text, url], i) => (
+            <Link key={i} href={url} className='hover:text-green-400 focus:underline underline-offset-8 px-2 '>{text}</Link>))}
+          <Link href={orderlink} target="_blank" className=' hover:font-semibold bg-red-600 rounded-sm px-2 uppercase '   > Order online</Link>
+          <Link href={reserveLink} target="_blank" className=' hover:font-semibold px-2 mt-1 bg-green-500 rounded-md uppercase '   > Reserve a table</Link>
+          <div className='flex flex-row text-xl p-4 gap-4'>
+            <Link href={"https://www.instagram.com/hqmanchester/"} ><FaInstagram /></Link>
+            <Link href={""} ><FaTiktok /></Link>
+          </div>
+        </div>
+        <span onClick={handleNav} className='text-white absolute bottom-3 right-4'>X close</span>
+      </div>}
     </div>
-    <div className=' bg-black w-[200px] h-[300px] hidden z-20'>
-<ul>
-  <li></li>
-</ul>
-   </div>
-    </>
   )
 }
