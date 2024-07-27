@@ -7,7 +7,7 @@ export default function layout({children}) {
   return (
     <div>
         <Menuhero/>
-        <Menubar/>
+     
         {children}
         </div>
   )
