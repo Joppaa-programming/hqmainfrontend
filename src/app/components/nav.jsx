@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import React, { useState } from 'react'
-import { FaInstagram, FaTiktok, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaTiktok, FaFacebook,FaBars,FaWindowClose  } from "react-icons/fa";
 export default function Nav() {
   const [navbar, setNavbar] = useState(false);
   const handleNav = () => {
@@ -11,7 +11,7 @@ export default function Nav() {
   const orderlink = "https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781"
   const reserveLink = "https://www.pronto-food-online.com/ordering/restaurant/menu/reservation?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&reservation=true&glfa_cid=1277109742.1603227119&glfa_t=1603227121089"
   const menuItems = [
-    ['Menu', '/menu'],
+    ['Hq Menu', '/menu'],
    
     ['Call us', 'tel:01614255080'], ['About HQ', '/'],
     // ['Order online', orderlink],
@@ -30,18 +30,12 @@ export default function Nav() {
           />
         </Link>
         <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24 w-44  uppercase text-center px-4 py-1 rounded-sm'   > Order online</Link><div></div>
-        <div onClick={handleNav} className=' h-[40px] w-[40px] relative'>
-          <Image
-            src="/ngflag.png"
-            fill
-            sizes="40px"
-            style={{ objectFit: "cover" }}
-            alt="Picture of the author"
-          />
+        <div onClick={handleNav} className=' h-[55px] w-[55px] items-center flex justify-center text-2xl relative'>
+        {navbar == false ? <FaBars /> : <FaWindowClose /> }
         </div>
 
       </div>
-      {navbar && <div id='menu' className=' absolute top-[72px] left-3 rounded-md bg-black  w-screen shadow-sm flex max-w-[660px] h-[460px] flex-col items-start z-20'>
+      {navbar && <div id='menu' className=' absolute top-[72px]  rounded-md bg-black  w-screen shadow-sm flex max-w-[660px] h-[460px] flex-col items-start z-20'>
 
         <div className='p-4 mt-4  flex flex-col gap-3 font-bold justify-center '>
           
@@ -56,7 +50,7 @@ export default function Nav() {
           <span className='px-2 text-sm  gap-2 flex flex-col'> <p className='font-light'>Opening Hours</p> <p>Monday - Sunday</p><p>4pm - 11pm</p>
           </span>
         </div>
-        <span onClick={handleNav} className='text-white absolute text-xs  cursor-pointer top-5 right-12'>X close</span>
+        <span onClick={handleNav} className='text-white absolute text-xs  cursor-pointer top-5 right-12'>Close</span>
       </div>}
     </div>
   )
