@@ -30,8 +30,8 @@ export default function Nav() {
           />
         </Link>
         <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24 w-44  uppercase text-center px-4 py-1 rounded-sm'   > Order online</Link><div></div>
-        <div onClick={handleNav} className=' h-[55px] w-[55px] items-center flex justify-center text-2xl relative'>
-        {navbar == false ? <FaBars /> : <FaWindowClose /> }
+        <div onClick={handleNav} className=' h-[55px] w-[55px]  items-center flex justify-center text-2xl relative'>
+        {navbar == false ? <FaBars className='hover:text-green-500' /> : <FaWindowClose className='hover:text-red-500' /> }
         </div>
 
       </div>
