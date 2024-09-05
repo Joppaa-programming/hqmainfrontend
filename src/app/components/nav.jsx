@@ -6,19 +6,20 @@ import { FaInstagram, FaTiktok, FaFacebook,FaBars,FaWindowClose  } from "react-i
 export default function Nav() {
   const [navbar, setNavbar] = useState(false);
   const handleNav = () => {
-    setNavbar(!navbar);
+    setNavbar(!navbar); 
   }
   const orderlink = "https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781"
   const reserveLink = "https://www.pronto-food-online.com/ordering/restaurant/menu/reservation?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&reservation=true&glfa_cid=1277109742.1603227119&glfa_t=1603227121089"
   const menuItems = [
     ['Hq Menu', '/menu'],
    
-    ['Call us', 'tel:01614255080'], ['About HQ', '/'],
+    ['Call us', 'tel:01614255080'],
+    // ['About HQ', '/'],
     // ['Order online', orderlink],
     // ['Reserve a table', reserveLink],
   ]
   return (
-    <div className=''>
+    <div className=' text-white'>
       <div className=' overflow-hidden shadow-lg bg-navImage flex flex-row h-[70px] px-6 relative w-screen items-center justify-between '>
         <Link href={"/"} className=' h-[55px] w-[55px] relative'>
           <Image
@@ -35,9 +36,9 @@ export default function Nav() {
         </div>
 
       </div>
-      {navbar && <div id='menu' className=' absolute top-[72px]  rounded-md bg-black  w-screen shadow-sm flex max-w-[660px] h-[460px] flex-col items-start z-20'>
+      {navbar && <div id='menu' className=' absolute top-[72px]  rounded-md bg-black text-white  w-screen shadow-sm flex max-w-[660px] h-[460px] flex-col items-start z-20'>
 
-        <div className='p-4 mt-4  flex flex-col gap-3 font-bold justify-center '>
+        <div className='p-4 mt-4  flex flex-col gap-3 text-white  font-bold justify-center '>
           
           {menuItems.map(([text, url], i) => (
             <Link onClick={handleNav} key={i} href={url} className='hover:text-green-400 focus:underline underline-offset-8 px-2 text-lg uppercase '> {text}</Link>))}

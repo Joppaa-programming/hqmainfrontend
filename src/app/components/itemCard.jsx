@@ -11,7 +11,7 @@ export default function ItemCard({ key, item }) {
                 <div id='itemTitle' className='w-3/4'>{item.name}</div>
                 <div id='itemPrice' className='w-1/4 text-center'>£{item.price}</div>
             </div>
-                <div id='itemDesc' className='w-full text-xs'>{item.description}</div></div>
+                <div id='itemDesc' className='w-full text-white text-xs'>{item.description}</div></div>
 
         </div>
     )

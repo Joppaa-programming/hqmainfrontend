@@ -2,6 +2,7 @@
 import { useEffect, useRef, useState } from 'react';
 import * as pdfjsLib from 'pdfjs-dist';
 import 'pdfjs-dist/build/pdf.worker.entry';
+import Link from 'next/link';
 
 const PdfViewer = ({ fileUrl }) => {
     const canvasRef = useRef(null);
@@ -48,10 +49,13 @@ const PdfViewer = ({ fileUrl }) => {
             <canvas  ref={canvasRef} />
             <div className='absolute bottom-2 w-full' >
                 {pdf && (
-                    <div className='flex flex-row justify-between px-2' >
+                    <div className='flex text-white flex-row justify-between px-2' >
                         <button className='bg-black p-1' disabled={pageNumber <= 1} onClick={() => setPageNumber(pageNumber - 1)}>
                             Previous
                         </button>
+                        <Link className='bg-black p-1 text-lg' href="/menu">
+                            View Menu
+                        </Link>
                         <button className='bg-black p-1' disabled={pageNumber >= pdf.numPages} onClick={() => setPageNumber(pageNumber + 1)}>
                             Next
                         </button>

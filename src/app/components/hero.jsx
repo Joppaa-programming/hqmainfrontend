@@ -7,7 +7,7 @@ export default function Hero() {
   return (
     <div className="h-[600px] relative  bg-cover bg-origin-border flex flex-col justify-center items-center w-screen " >
       <Imagetext imgSrc={'/heroimage.jpeg'} />
-      <div className='absolute flex flex-col justify-center items-center'>
+      <div className='absolute text-white flex flex-col justify-center items-center'>
         <div className="pb-2  text-center"><h1 className="  font-bold text-5xl md:text-6xl  "> Home of
           Nigerian <br></br>  Cuisine</h1>
           <p className="p-3 text-lg">in Manchester </p></div>
@@ -15,7 +15,7 @@ export default function Hero() {
           Order online
         </Link>
       </div>
-      <p className=" text-xs px-5 font-bold shadow-sm absolute bottom-4"> {smtext}</p>
+      <p className=" text-xs px-5 font-bold shadow-sm absolute bottom-4 text-white"> {smtext}</p>
     </div>
   );
 }

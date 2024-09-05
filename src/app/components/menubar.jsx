@@ -21,7 +21,7 @@ export default function Menubar() {
 
 
     return (
-        <>  <div className='bg-black mt-2 h-11 w-screen flex flex-row items-center  justify-center overflow-y-hidden shadow-lg'>
+        <>  <div className=' mt-2 h-11 w-screen  flex flex-row items-center  justify-center overflow-y-hidden shadow-lg'>
 
             {menuHeading.map((item, index) =>
             (

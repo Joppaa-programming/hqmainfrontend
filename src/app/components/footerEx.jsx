@@ -70,7 +70,7 @@ export default function Footer() {
                     {error && <div className="mt-6 text-red-600">Error: {error.message}</div>}
                 </div>
                 <div className='md:pl-10'>
-                    <h2 className='text-3xl sm:text-5xl text-green-400 font-bold'>MANC</h2>
+                    <h2 className='text-3xl sm:text-5xl text-green-400 font-bold'>FALLOWFIELD</h2>
                     <p className='mt-3'> HQ (H.Q. Nigerian Restaurant) <br /> 317 Wilmslow Rd, Fallowfield, <br />
                         Kombo North West Coast Region,<br />Manchester<br />
                         <br />M14 6NW </p>

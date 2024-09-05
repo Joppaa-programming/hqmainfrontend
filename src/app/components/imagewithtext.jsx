@@ -9,7 +9,7 @@ export default function Imagetext({ imgSrc }) {
                 fill
                 sizes="100vw"
                 style={{ objectFit: "cover" }}
-                alt="Picture of the author"
+                alt="Hqfood"
             />
         </>
     )
