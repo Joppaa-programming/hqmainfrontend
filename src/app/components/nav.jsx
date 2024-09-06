@@ -14,7 +14,7 @@ export default function Nav() {
     ['Hq Menu', '/menu'],
    
     ['Call us', 'tel:01614255080'],
-    // ['About HQ', '/'],
+   ['About HQ', '/about'],
     // ['Order online', orderlink],
     // ['Reserve a table', reserveLink],
   ]
