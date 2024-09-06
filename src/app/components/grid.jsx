@@ -4,7 +4,7 @@ import ItemCard from './itemCard'
 
 export default function Grid({items}) {
  if (items.length === 0) {
-    return ( <div className="text-center mt-9 mb-24"> Click a Option to view menu </div>)
+    return ( <div className="text-center mt-9 mb-24"> Click any option above view menu </div>)
  }
    
     return (

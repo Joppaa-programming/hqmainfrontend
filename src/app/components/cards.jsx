@@ -5,9 +5,9 @@ export default function Card({ heading, info, cta }) {
     return (
         <div className=' p-7 max-w-[350px]'>
             <div className='flex flex-col'>
-                <div className='font-extrabold text-3xl'> {heading}</div>
-                <div className='py-4'> {info}</div>
-                <div><div className='relative'><Link href={cta.link}  target="_blank" className='bg-green-400 text-black font-medium w-52 text-center px-4 py-2'>{cta.text}</Link><span className='absolute'></span></div></div>
+                <div className='inline-block font-extrabold md:h-[74px] text-3xl md:align-middle md:text-4xl'> {heading}</div>
+                <div className='py-4 md:h-[160px]'> {info}</div>
+                <div className='relative'><Link href={cta.link}  target="_blank" className='bg-green-400 text-black font-medium w-52 hover:text-white text-center px-4 py-2'>{cta.text}</Link></div>
             </div>
         </div>
     )

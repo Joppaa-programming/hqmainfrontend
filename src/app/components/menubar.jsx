@@ -21,11 +21,11 @@ export default function Menubar() {
 
 
     return (
-        <>  <div className=' mt-2 h-11 w-screen  flex flex-row items-center  justify-center overflow-y-hidden shadow-lg'>
+        <>  <div className=' mt-2 h-11 w-screen gap-1 flex flex-row items-center  justify-center overflow-y-hidden shadow-lg'>
 
             {menuHeading.map((item, index) =>
             (
-                <div onClick={() => (handleSearch(item))} className='w-auto p-2 cursor-pointer hover:bg-lime-400  text-sm' key={index}>{item}</div>)
+                <div onClick={() => (handleSearch(item))} className='w-auto p-2 cursor-pointer hover:bg-lime-400 bg-emerald-700 rounded-md text-sm' key={index}>{item}</div>)
             )}
 
 

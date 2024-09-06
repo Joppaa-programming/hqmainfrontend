@@ -19,7 +19,7 @@ export default function Nav() {
     // ['Reserve a table', reserveLink],
   ]
   return (
-    <div className=' text-white'>
+    <div className=' text-white fixed z-10'>
       <div className=' overflow-hidden shadow-lg bg-navImage flex flex-row h-[70px] px-6 relative w-screen items-center justify-between '>
         <Link href={"/"} className=' h-[55px] w-[55px] relative'>
           <Image
@@ -30,13 +30,13 @@ export default function Nav() {
             alt="Picture of the author"
           />
         </Link>
-        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24 w-44  uppercase text-center px-4 py-1 rounded-sm'   > Order online</Link><div></div>
-        <div onClick={handleNav} className=' h-[55px] w-[55px]  items-center flex justify-center text-2xl relative'>
+        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24 w-44  uppercase text-center px-4 py-1 hover:text-lg rounded-sm'   > Order online</Link><div></div>
+        <div onClick={handleNav} className=' h-[55px] w-[55px]  items-center flex justify-center text-2xl  relative'>
         {navbar == false ? <FaBars className='hover:text-green-500' /> : <FaWindowClose className='hover:text-red-500' /> }
         </div>
 
       </div>
-      {navbar && <div id='menu' className=' absolute top-[72px]  rounded-md bg-black text-white  w-screen shadow-sm flex max-w-[660px] h-[460px] flex-col items-start z-20'>
+      {navbar && <div id='menu' className=' absolute top-[70px]  rounded-md bg-black text-white   w-screen shadow-sm flex max-w-[460px] h-[460px] flex-col items-start z-20'>
 
         <div className='p-4 mt-4  flex flex-col gap-3 text-white  font-bold justify-center '>
           

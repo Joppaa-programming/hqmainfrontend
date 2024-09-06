@@ -2,16 +2,16 @@ import React from 'react'
 import Card from './cards'
    const cards = [
         {
-            "heading": "Order for Collect",
-            "info": "Plan ahead and get your Jollof to-go, from HQ to skip queue.",
+            "heading": "Call HQ Manchester",
+            "info": "Plan ahead and get your Jollof to-go from HQ. A checky skip of the queue.",
             "cta": {
-                "text": "ORDER COLLECT",
+                "text": "CALL HEADQAURTERS",
                 "link": "tel:01614255080"
             }
         },
         {
             "heading": "HQ's Delivery",
-            "info": "We sometimes change our delivery areas based on demand - check if we’re delivering to you.",
+            "info": "We sometimes change our delivery areas based on demand - check if we’re delivering to you.Before Ordering",
             "cta": {
                 "text": "ORDER DELIVERY",
                 "link": "https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781"

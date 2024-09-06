@@ -7,15 +7,15 @@ export default function Menuhero() {
     const smtext = "Please let us know if you have any food allergies or special dietary needs."
     return (
         <div className="h-[400px] text-white relative  bg-cover bg-origin-border flex flex-col justify-center items-center w-screen " >
-            <Imagetext imgSrc={'/hero2.png'} />
+            <Imagetext imgSrc={'/fish.webp'} />
             <div className='absolute  flex flex-col justify-center items-center'>
-                <h1 className="  font-bold text-4xl md:text-6xl  "> HQ Menu </h1>
+                <h1 className="  font-bold text-4xl md:text-6xl drop-shadow-md "> HQ Menu </h1>
                 <p className="p-3 text-lg"> Manchester  </p>
                 <Link href={orderlink} target="_blank" className="bg-white text-black text-xl py-2 px-4 uppercase">
                     Order online
                 </Link>
             </div>
-            <p className=" text-xs px-5  absolute bottom-4"> {smtext}</p>
+            <p className=" text-xs px-5 text-emerald-600 absolute bottom-4"> {smtext}</p>
         </div>
     );
 }
