@@ -11,11 +11,11 @@ export default function Hero() {
         <div className="pb-2  text-center"><h1 className="drop-shadow-md  font-bold text-5xl md:text-6xl  "> Home of
           Nigerian <br></br>  Cuisine</h1>
           <p className="p-3 drop-shadow-md font-medium text-lg">in Manchester </p></div>
-        <Link href={orderlink} target="_blank" className="bg-white text-green-500 text-xl hover:text-red-500 py-2 px-4 rounded-sm ">
+        <Link href={orderlink} target="_blank" className="bg-white text-black text-xl hover:text-red-500 py-2 px-4 rounded-sm ">
           Order online
         </Link>
       </div>
-      <p className=" text-xs px-5 font-bold shadow-sm absolute bottom-4 text-green-600"> {smtext}</p>
+      <p className=" text-xs px-5 font-bold shadow-sm absolute bottom-4 text-emerald-600"> {smtext}</p>
     </div>
   );
 }
