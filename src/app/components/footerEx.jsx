@@ -72,7 +72,7 @@ export default function Footer() {
                 <div className='md:pl-10'>
                     <h2 className='text-3xl sm:text-5xl text-green-400 font-bold'>GET IN TOUCH</h2>
                     <p className='mt-3'> HQ (H.Q. Nigerian Restaurant) <br /> 317 Wilmslow Rd, Fallowfield, <br />
-                        Kombo North West Coast Region,<br />Manchester<br />
+                     Manchester<br />
                         <br />M14 6NW </p>
                     <span className='mt-3'><p>HQ</p>
                         0161 425 5080
