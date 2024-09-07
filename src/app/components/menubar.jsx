@@ -6,7 +6,7 @@ import { menu } from '../data/hq.json'
 import Grid from './grid'
 export default function Menubar() {
     const [searchKey, setSearchKey] = useState('');
-    const [results, setResults] = useState([]);
+    const [results, setResults] = useState(data.menu.Appetizers);
     const menuHeading = Object.keys(data.menu)
     const handleSearch = (item) => {
         const key = Object.keys(data.menu).find(
@@ -18,10 +18,10 @@ export default function Menubar() {
             setResults([]);
         }
     };
-
+  
 
     return (
-        <>  <div className=' mt-2 h-11 w-screen gap-1 flex flex-row items-center  justify-center overflow-y-hidden shadow-lg'>
+        <>  <div className=' mt-2 p-3 h-11 w-screen gap-1 flex flex-row items-center  justify-center  shadow-lg'>
 
             {menuHeading.map((item, index) =>
             (

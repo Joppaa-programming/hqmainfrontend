@@ -54,7 +54,7 @@ const PdfViewer = ({ fileUrl }) => {
                             Previous
                         </button>
                         <Link className='bg-black p-1 text-lg' href="/menu">
-                            View Menu
+                            View Main Menu
                         </Link>
                         <button className='bg-black p-1' disabled={pageNumber >= pdf.numPages} onClick={() => setPageNumber(pageNumber + 1)}>
                             Next
