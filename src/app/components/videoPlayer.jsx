@@ -15,7 +15,7 @@ export default function VideoPlayer() {
             <video width="320px" height="720px" preload="auto" controls >
                 <source src="/restaurant.mp4" />
                 videoPlayer</video>
-                Video could not load, use different browser
+          
 
         </div>
     )
