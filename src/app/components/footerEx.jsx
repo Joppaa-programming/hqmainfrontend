@@ -82,9 +82,10 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div id='footer-bottom' className='border-t-2 lg:flex text-gray-500 lg:justify-center lg:text-center'>
+            <div id='footer-bottom' className='border-t-2 lg:flex text-gray-500  lg:text-center'>
 
                 <div className='text-xs my-4 flex flex-col lg:flex px-2 gap-1 align-top items-start  justify-center'>
+                  
                     <Link href="#contactus">
                         <div className='flex md:px-5 content-center md:align-middle text-green-400' >
                             <h2 className='text-xl text-center font-bold'>
