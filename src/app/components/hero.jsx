@@ -23,10 +23,10 @@ export default function Hero() {
           <h1 className="drop-shadow-md  font-bold text-5xl md:text-6xl "> Home of
             Nigerian <br></br>  Cuisine</h1>
           <h1 className="drop-shadow-md font-medium text-lg ">in Manchester </h1>
-          <Link href={orderlink} target="_blank" className="bg-white text-black text-xl hover:text-red-500 py-2 px-4 rounded-sm ">
+       
+        </div>   <Link href={orderlink} target="_blank" className="bg-white text-black text-xl hover:text-red-500 py-2 px-4 rounded-sm ">
             Order online
           </Link>
-        </div>
       </div>
       <p className=" bg-white text-xs px-5 font-bold shadow-sm absolute bottom-4 text-emerald-600"> {smtext}</p>
     </div>

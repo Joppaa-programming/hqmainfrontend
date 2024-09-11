@@ -4,7 +4,7 @@ import React from 'react'
 export default function Card({ heading, info, cta, target }) {
     //console.log(target)
     return (
-        <div className=' p-6 max-w-[350px]  rounded-md'>
+        <div className=' px-6 py-1 max-w-[350px]  rounded-md'>
             <div className='flex flex-col'>
                 <div className='inline-block font-extrabold md:h-[74px]  md:align-middle text-3xl md:text-4xl'> {heading}</div>
                 <div className='py-4 md:h-[160px]'> {info}</div>
