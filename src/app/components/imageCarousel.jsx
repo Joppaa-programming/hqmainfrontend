@@ -10,7 +10,7 @@ export default function ImageCarousel({data}) {
         const carouselRef = useRef(null)
 
 data.map((v,i) =>{
-    console.log(v,i)
+   // console.log(v,i)
 })
         useEffect(() => {
             let elem = carouselRef.current

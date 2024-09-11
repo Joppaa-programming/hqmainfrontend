@@ -26,7 +26,7 @@ export default function Hero() {
           Order online
         </Link>
       </div>
-      <p className=" text-xs px-5 font-bold shadow-sm absolute bottom-4 text-emerald-600"> {smtext}</p>
+      <p className=" text-xs px-5 font-bold shadow-sm absolute bottom-4 text-black"> {smtext}</p>
     </div>
   );
 }

@@ -35,7 +35,7 @@ export default function CardsList() {
                 <Image className="opacity-10" src="/nigeria.jpg" alt="nigeria streets" fill sizes="100vw"
                     style={{ objectFit: "cover" }} />
                 <div className=" flex flex-col justify-center items-center gap-10">
-                    <Image className=" " src="/ngflag.png" width={100} height={100} alt="nigeriaflag" />
+                    <Image className=" " src="/ngflag.png" width={80} height={80} alt="nigeriaflag" />
                     <div className='flex gap-2   flex-col sm:h-[400px] md:flex-row'>
                         {cards.map((card, index) => (<div key={index}><Card heading={card.heading} cta={card.cta} info={card.info} /></div>))}
                     </div>
