@@ -32,7 +32,7 @@ export default function CardsList() {
     return (
         <>
             <div className="  relative  w-screen h-screen flex justify-center items-center ">
-                <Image className="opacity-10" src="/nigeria.jpg" alt="nigeria streets" fill sizes="100vw"
+                <Image className="opacity-20" src="/nigeria.jpg" alt="nigeria streets" fill sizes="100vw"
                     style={{ objectFit: "cover" }} />
                 <div className=" flex flex-col justify-center items-center gap-10">
                     <Image className=" " src="/ngflag.png" width={80} height={80} alt="nigeriaflag" />
