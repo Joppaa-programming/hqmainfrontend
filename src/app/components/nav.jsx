@@ -44,14 +44,15 @@ export default function Nav() {
           <Link onClick={handleNav}  href={orderlink} target="_blank" className='px-4 py-2 hover:font-semibold bg-red-600 rounded-sm  uppercase '   > Order online</Link>
           <Link onClick={handleNav}  href={reserveLink} target="_blank" className=' hover:font-semibold px-4 py-2 mt-1 bg-green-500 rounded-md uppercase '   > Reserve a table</Link>
        
-          <span className='px-2 text-sm mt-2 gap-2 flex flex-col'> <p className=''>Opening Hours</p> <p>Monday - Sunday</p><p>4pm - 11pm</p>
+          <span className='px-2 text-sm mt-2 gap-2 flex flex-col'> <p className='uppercase'>Opening Hours</p> <p>Monday - Sunday</p><p>4pm - 11pm</p>
           </span>
           <div className=''>
                
-                    <p className=''> <br />  HQ (H.Q. Nigerian Restaurant) <br /> 317 Wilmslow Rd, Fallowfield,<br />Manchester<br />
+                    <p className=''>  H.Q  <br /> 317 Wilmslow Rd, Fallowfield,<br />Manchester<br />
                         M14 6NW </p>
-                    <span className='mt-3'><p>HQ</p>
-                        0161 425 5080
+                    <span className='mt-3'>
+                   
+                        0161 425 5080  <br /> 
                     </span>
                     <div className='flex pt-3 mb-2 justify-start text-center text-green-400'>
                     <Link target="_blank" href={'https://www.facebook.com/hqmanchester'}><FaFacebookF className='text-xl mr-5' /></Link> 

@@ -4,7 +4,7 @@ import Image from 'next/image'
 const cards = [
     {
         "heading": "HQ's Delivery",
-        "info": "We sometimes change our delivery areas based on demand - check if we’re delivering to you.Before Ordering",
+        "info": "We sometimes change our delivery areas based on demand - check if we’re delivering to you before ordering",
         "cta": {
             "text": "ORDER DELIVERY",
             "link": "https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781"

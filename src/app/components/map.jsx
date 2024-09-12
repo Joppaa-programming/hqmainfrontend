@@ -19,22 +19,18 @@ export default function MapElemt() {
     return (
         <div className=" relative bg-green-800  flex flex-col sm:flex-col items-start max-w-fit w-screen lg:flex-row  h-full" >
             <div className=" flex flex-col md:flex-row items-start  w-full h-full ">
-
                 <div className=" flex flex-col items-center w-full max-w-fit h-[450px] p-8 " >
                     <h1 className="text-2xl pb-4">{closingText}</h1>
-                  
-                        <table className="table-auto border-collapse  m-auto border border-green-600">
-                          
-                            <tbody>
-                                {Object.entries(openingTimes).map(([day, times]) => (
-                                    <tr key={day}>
-                                        <td className="border border-green-300 px-4 py-2">{day}</td>
-                                        <td className="border border-green-300 px-4 py-1">{times}</td>
-                                    </tr>
-                                ))}
-                            </tbody>
-                        </table>
-                  
+                    <table className="table-auto border-collapse  m-auto border border-green-600">
+                        <tbody>
+                            {Object.entries(openingTimes).map(([day, times]) => (
+                                <tr key={day}>
+                                    <td className="border border-green-300 px-4 py-2">{day}</td>
+                                    <td className="border border-green-300 px-4 py-1">{times}</td>
+                                </tr>
+                            ))}
+                        </tbody>
+                    </table>
                 </div>
                 <div className="bg-green-800  text-center max-w-fit w-full  h-[300px] p-8 " >
                     <h1 className="text-2xl pb-4">{heading}</h1>
@@ -42,14 +38,12 @@ export default function MapElemt() {
                 </div>
             </div>
             <div className="bg-green-800  text-center max-w-fit w-full max-h-fit  p-8 " >
-            <h1 className="text-2xl pb-2">{"Find Us !!" }</h1>
-                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9505.966881078995!2d-2.2184155!3d53.4417958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb35765d45043%3A0xfa9825f6f246358d!2sH.Q.!5e0!3m2!1sen!2suk!4v1726008859332!5m2!1sen!2suk" width="360" height="450" style={{ border: 0, padding: 20, }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+                <h1 className="text-2xl pb-2">{"Find Us !!"}</h1>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d9505.966881078995!2d-2.2184155!3d53.4417958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487bb35765d45043%3A0xfa9825f6f246358d!2sH.Q.!5e0!3m2!1sen!2suk!4v1726008859332!5m2!1sen!2suk" width="360" height="450" style={{ border: 0, padding: 20, }} allowFullScreen loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
             </div>
-           
             {/* <div className=" relative flex flex-col w-[300px] h-[300px]"> 
         <Image src="/mapradius.png" fill  alt="test" /></div>
         */}
-        
         </div>
     )
 }

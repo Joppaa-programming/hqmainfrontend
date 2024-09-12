@@ -2,7 +2,7 @@
 import React from 'react'
 import { useState } from 'react';
 import addData from '../data/firebase';
-import { FaFacebookF, FaInstagram, FaLinkedinIn,FaTiktok } from 'react-icons/fa';
+import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from 'react-icons/fa';
 import Link from 'next/link';
 
 export default function Footer() {
@@ -17,7 +17,7 @@ export default function Footer() {
 
         try {
             const info = {
-                name: "Guest",
+                name: name,
                 email: email,
                 message: "Subscribe to New letter",
                 createdAt: new Date(),
@@ -46,7 +46,21 @@ export default function Footer() {
                     </p>
                     {submitted == false ? (<form className='flex flex-col mb-5 ' onSubmit={handleSubmit}>
                         <label className=' pt-3 text-xs'>
-                            Your work email
+                            Your Fullname
+                        </label>
+                        <input
+                            id="name"
+                            name="name"
+                            type="text"
+                            autoComplete="name"
+                            value={name}
+                            onChange={(e) => setName(e.target.value)}
+                            required
+                            className="block w-full py-3 px-4  bg-transparent    border-black-600 border-b-2 "
+                            placeholder=""
+                        />
+                        <label className=' pt-3 text-xs'>
+                            Your Email
                         </label>
                         <input
                             id="email"
@@ -65,27 +79,28 @@ export default function Footer() {
                                 className=" justify-center text-xs h-9   px-8 mb-5  font-bold rounded-full text-white bg-green-500 hover:bg-green-600 focus:outline-none focus:ring-green-500 focus:ring-offset-green-200 active:bg-green-600 transition duration-150 ease-in-out">
                                 Sign up Now!
                             </button></div>
-                    </form>) : <div className="mt-6 text-green-200">Thank you for Subscribing</div>
+                    </form>) : <div className="my-4 text-green-200">Thank you for Subscribing</div>
                     }
                     {error && <div className="mt-6 text-red-600">Error: {error.message}</div>}
                 </div>
                 <div className='md:pl-10'>
                     <h2 className='text-3xl sm:text-5xl text-green-400 font-bold'>GET IN TOUCH</h2>
-                    <p className='mt-3'> HQ (H.Q. Nigerian Restaurant) <br /> 317 Wilmslow Rd, Fallowfield, <br />
-                     Manchester<br />
+                    <p className='mt-3'> HQ <br /> 317 Wilmslow Rd, Fallowfield, <br />
+                        Manchester
                         <br />M14 6NW </p>
                     <span className='mt-3'><p>HQ</p>
                         0161 425 5080
                     </span>
                     <div className='flex pt-3 justify-start text-center text-green-400'>
-                    <Link href={'https://www.facebook.com/hqmanchester'}><FaFacebookF className='text-xl mr-5' /></Link> <Link href={'https://www.instagram.com/hqmanchester/'}><FaInstagram className='text-xl mr-5 ' /></Link>  <Link href={'https://www.tiktok.com/@hqmanchester/'}><FaTiktok className='text-xl mr-5' /></Link>
+                        <Link href={'https://www.facebook.com/hqmanchester'}><FaFacebookF className='text-xl mr-5' /></Link>
+                        <Link href={'https://www.instagram.com/hqmanchester/'}><FaInstagram className='text-xl mr-5 ' /></Link>  <Link href={'https://www.tiktok.com/@hqmanchester/'}><FaTiktok className='text-xl mr-5' /></Link>
                     </div>
                 </div>
             </div>
             <div id='footer-bottom' className='border-t-2 lg:flex text-gray-500  lg:text-center'>
 
                 <div className='text-xs my-4 flex flex-col lg:flex px-2 gap-1 align-top items-start  justify-center'>
-                  
+                    {/*                   
                     <Link href="#contactus">
                         <div className='flex md:px-5 content-center md:align-middle text-green-400' >
                             <h2 className='text-xl text-center font-bold'>
@@ -95,11 +110,11 @@ export default function Footer() {
                                 |
                             </span>
                             <p className='text-xl font-bold'>
-                                Be Ready .
+                                Be Ready
                             </p>
                         </div>
-                    </Link>
-                    <p className=''> Headquaters Manchester © 2024 </p>
+                    </Link> */}
+                    <p className=''> HQ © 2024 </p>
                     <span className=''> WhatsApp : 07424622616 </span>
                     <Link href={'https://zabbu.org/'} className=''> Developed By Zabbu Marketing </Link>
                     <Link href="/"><h2 className='text-xs '>Privacy Policy
