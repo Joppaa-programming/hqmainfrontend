@@ -30,9 +30,9 @@ export default async function addData(data) {
   try {
 
     const cll = collection(db, '/subcribed');
-    //   const newUserRef = doc(cll);
-    result = await addDoc(cll, data);
-    //    await setDoc(newUserRef, data);
+     //const newUserRef = doc(cll);
+   result = await addDoc(cll, data);
+   // result =   await setDoc(newUserRef, data);
     console.log(result);
 
   } catch (e) {

@@ -24,7 +24,7 @@ export default function Menuhero() {
                     Order online
                 </Link>
             </div>
-            <p className=" text-xs px-5 text-emerald-600 absolute bottom-4"> {smtext}</p>
+            <p className=" text-xs px-5 bg-white text-emerald-600 absolute bottom-4"> {smtext}</p>
         </div>
     );
 }
