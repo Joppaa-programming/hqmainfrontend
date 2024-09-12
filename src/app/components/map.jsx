@@ -14,7 +14,7 @@ export default function MapElemt() {
     };
     const closingText = "Opening times"
 
-    const heading = "We're HQ"
+    const heading = "We're H.Q"
     const para = "At H.Q, we believe in the power of food to bring people together. We proudly serve authentic Nigerian dishes from all corners of Nigeria, offering a unique experience that’s more than just a meal. It’s a journey into the rich culinary traditions of Nigeria.  Come eat with us"
     return (
         <div className=" relative bg-green-800  flex flex-col sm:flex-col items-start max-w-fit w-screen lg:flex-row  h-full" >

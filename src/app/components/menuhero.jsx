@@ -18,7 +18,7 @@ export default function Menuhero() {
             {/* <Imagetext imgSrc={'/fish.webp'} /> */}
             <ImageCarousel data={images}/>
             <div className='absolute  flex  flex-col justify-center items-center'>
-                <h1 className="  font-bold  text-6xl md:text-8xl drop-shadow-md "> HQ Menu </h1>
+                <h1 className="  font-bold  text-6xl md:text-8xl drop-shadow-md "> H.Q Menu </h1>
                 <p className="p-3 text-lg"> Manchester  </p>
                 <Link href={orderlink} target="_blank" className="bg-white mt-10 text-black text-xl py-2 px-4 uppercase">
                     Order online

@@ -85,10 +85,10 @@ export default function Footer() {
                 </div>
                 <div className='md:pl-10'>
                     <h2 className='text-3xl sm:text-5xl text-green-400 font-bold'>GET IN TOUCH</h2>
-                    <p className='mt-3'> HQ <br /> 317 Wilmslow Rd, Fallowfield, <br />
+                    <p className='mt-3'> H.Q <br /> 317 Wilmslow Rd, Fallowfield, <br />
                         Manchester
                         <br />M14 6NW </p>
-                    <span className='mt-3'><p>HQ</p>
+                    <span className='mt-3'><p>H.Q</p>
                         0161 425 5080
                     </span>
                     <div className='flex pt-3 justify-start text-center text-green-400'>
@@ -104,7 +104,7 @@ export default function Footer() {
                     <Link href="#contactus">
                         <div className='flex md:px-5 content-center md:align-middle text-green-400' >
                             <h2 className='text-xl text-center font-bold'>
-                                HQ
+                                H.Q
                             </h2>
                             <span className='text-xl font-bold lg:grid p-1 lg:grid-cols-2 '>
                                 |
@@ -114,8 +114,8 @@ export default function Footer() {
                             </p>
                         </div>
                     </Link> */}
-                    <p className=''> HQ © 2024 </p>
-                    <span className=''> WhatsApp : 07424622616 </span>
+                    <p className=''> H.Q © 2024 </p>
+                    {/* <span className=''> WhatsApp : 07424622616 </span> */}
                     <Link href={'https://zabbu.org/'} className=''> Developed By Zabbu Marketing </Link>
                     <Link href="/"><h2 className='text-xs '>Privacy Policy
                     </h2 > </Link>

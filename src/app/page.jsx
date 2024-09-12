@@ -12,7 +12,7 @@ export default function Home() {
     <Hero />
    <CardsList />
     <VideoPlayer/>
-    <Pdfviewerr />
+    {/* <Pdfviewerr /> */}
     < MapElemt/>
     </>
   );

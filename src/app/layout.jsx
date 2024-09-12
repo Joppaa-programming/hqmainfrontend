@@ -9,7 +9,7 @@ const openSans = Open_Sans({
   display: 'swap',
 })
 export const metadata = {
-  title: "HQ Restaurant",
+  title: "H.Q Restaurant",
   description: "Home of Nigerian cuisines. Website by Originally.Black",
 };
 

@@ -15,12 +15,12 @@ export default function Hero() {
   const orderlink = "https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781"
   const smtext = "Please let us know if you have any food allergies or special dietary needs."
   return (
-    <div className="h-screen relative  bg-cover bg-origin-border drop-shadow-xl shadow-lg flex flex-col justify-center items-center w-screen " >
+    <div className="h-screen relative  bg-cover  bg-origin-border drop-shadow-xl shadow-lg flex flex-col justify-center items-center w-screen " >
       {/* <Imagetext imgSrc={'/hero.webp'} /> */}
       <ImageCarousel data={images} />
       <div className='absolute text-white flex flex-col justify-center items-center'>
-        <div className="flex flex-col gap-4 text-center">
-          <h1 className="drop-shadow-md  font-bold text-5xl md:text-6xl "> Home of
+        <div className="flex flex-col gap-4 text-center pb-3">
+          <h1 className="drop-shadow-md  font-bold text-3xl md:text-4xl "> Home of
             Nigerian <br></br>  Cuisine</h1>
           <h1 className="drop-shadow-md font-medium text-lg ">in Manchester </h1>
        

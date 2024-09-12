@@ -3,7 +3,7 @@ import Card from './cards'
 import Image from 'next/image'
 const cards = [
     {
-        "heading": "HQ's Delivery",
+        "heading": "H.Q's Delivery",
         "info": "We sometimes change our delivery areas based on demand - check if we’re delivering to you before ordering",
         "cta": {
             "text": "ORDER DELIVERY",
@@ -21,8 +21,8 @@ const cards = [
         "target": "_blank ",
     },
     {
-        "heading": "Call HQ ",
-        "info": "Plan ahead and get your Jollof to-go from HQ. A checky skip of the queue.",
+        "heading": "Call H.Q ",
+        "info": "Plan ahead and get your Jollof to-go from H.Q. A checky skip of the queue.",
         "cta": {
             "text": "CALL US",
             "link": "tel:01614255080"
@@ -31,7 +31,7 @@ const cards = [
     },
     {
         "heading": "Our Menu ",
-        "info": "View our HQ menu on the go. Save time when ordering.",
+        "info": "View our H.Q menu on the go. Save time when ordering.",
         "cta": {
             "text": "VIEW MENU",
             "link": "/menu"
