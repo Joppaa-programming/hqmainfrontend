@@ -4,6 +4,7 @@ import { useState } from 'react';
 import addData from '../data/firebase';
 import { FaFacebookF, FaInstagram, FaLinkedinIn, FaTiktok } from 'react-icons/fa';
 import Link from 'next/link';
+import Image from 'next/image';
 
 export default function Footer() {
     const [name, setName] = useState('');
@@ -37,7 +38,7 @@ export default function Footer() {
         < div className='footer px-5 mb-6 '>
             <div id='footer-main' className='pt-20 pb-12  gap-16 items-start content-center py-8 px-4 mx-auto max-w-screen-xl md:grid md:grid-cols-2 lg:py-16 lg:px-6" '>
                 <div className=''>
-                    <h2 className='text-3xl text-green-400 font-bold sm:text-5xl'>
+                    <h2 className='text-3xl text-green-400 font-bold sm:text-5xl pb-4'>
                         Subscribe
                     </h2>
                     <p className='text-base'>
@@ -97,8 +98,10 @@ export default function Footer() {
                     </div>
                 </div>
             </div>
-            <div id='footer-bottom' className='border-t-2 lg:flex text-gray-500  lg:text-center'>
-
+            <div id='footer-bottom' className='border-t-2 lg:flex flex justify-between flex-row-reverse text-gray-500  lg:text-center'>
+<div className="w-[90px] relative m-auto h-[90px]">
+    <Image src="/hqlogo.png" fill />
+</div>
                 <div className='text-xs my-4 flex flex-col lg:flex px-2 gap-1 align-top items-start  justify-center'>
                     {/*                   
                     <Link href="#contactus">
@@ -116,10 +119,11 @@ export default function Footer() {
                     </Link> */}
                     <p className=''> H.Q © 2024 </p>
                     {/* <span className=''> WhatsApp : 07424622616 </span> */}
-                    <Link href={'https://zabbu.org/'} className=''> Developed By Zabbu Marketing </Link>
-                    <Link href="/"><h2 className='text-xs '>Privacy Policy
+                    <Link href={'https://www.originally.black'} className=''> Developed By Originally.Black </Link>
+                    <Link href="/privacy"><h2 className='text-xs '>Privacy Policy
                     </h2 > </Link>
-
+                    <Link href="/terms"><h2 className='text-xs '>Terms & Conditions
+                    </h2 > </Link>
                     <Link href="https://www.originally.black">
                         <h2 className='text-xs uppercase pt-2  text-white  '>
                             www.Originally.Black

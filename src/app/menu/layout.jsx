@@ -5,7 +5,7 @@ import Menubar from '../components/menubar'
 
 export default function layout({children}) {
   return (
-    <div>
+    <div className=" flex flex-col justify-between w-screen">
         <Menuhero/>
      
         {children}

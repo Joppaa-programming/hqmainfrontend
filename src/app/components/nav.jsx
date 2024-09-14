@@ -18,7 +18,7 @@ export default function Nav() {
     // ['Reserve a table', reserveLink],
   ]
   return (
-    <div className=' text-white fixed z-20'>
+    <div id="nav" className=' text-white fixed z-20'>
       <div className=' overflow-hidden shadow-lg bg-navImage flex flex-row h-[70px] px-6 relative w-screen items-center justify-between '>
         <Link href={"/"} className=' h-[55px] w-[55px] relative'>
           <Image
