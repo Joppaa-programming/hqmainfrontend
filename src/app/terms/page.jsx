@@ -2,27 +2,16 @@
 
 'use client'
 import React from 'react';
-export default function TermsOfUsePage() {
 
+
+export default function TermsAndConditions () {
   return (
-    <div className="container p-3">
-      <div className="p-4 text-2xl">
-        <h1>Privacy Policy for Originally.Black</h1>
-      </div>
-      {/* <h1 className='absolute cursor-pointer hover:font-extrabold right-10'> Help </h1> */}
-      {TermsAndConditions()}
-    </div>)
-
-}
-
-const TermsAndConditions = () => {
-  return (
-    <div>
+    <div className="mt-[70px]">
 
       <div className="p-4 text-sm m-auto  max-w-[980px]" >
-        <h2 className='text-lg'>{"Terms And Conditions"}</h2>
+        <h2 className='text-lg'>{"General Terms And Conditions"}</h2>
         <div className=""></div>
-        <p className=' py-4 '>General Terms And Conditions Of Business For Online Ordering. <br/> These Terms and Conditions apply when ordering online from:</p>
+        <p className=' py-4 '>Of Business For Online Ordering at H.Q. <br/> These Terms and Conditions apply when ordering online from:</p>
         <h2>H.Q. MANCHESTER LTD </h2>
         <ul className='italic w-full text-[12px]'>
 

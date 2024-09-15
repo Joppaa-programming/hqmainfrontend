@@ -1,23 +1,12 @@
 
 
 'use client'
-import React from 'react';
-export default function TermsOfUsePage() {
+import React from 'react'
 
-  return (
-    <div className="container p-3">
-      <div className="p-4 text-2xl">
-        <h1>Privacy Policy for Originally.Black</h1>
-      </div>
-      {/* <h1 className='absolute cursor-pointer hover:font-extrabold right-10'> Help </h1> */}
-      {TermsAndConditions()}
-    </div>)
 
-}
-
-const TermsAndConditions = () => {
-  return (
-    <div>
+  export default function TermsAndConditions () {
+    return (
+    <div className="mt-[70px]">
 
       <div className="p-4 text-sm m-auto  max-w-[980px]" key={"index"}>
         <h2 className='text-lg'>{"Privacy Policy"}</h2>
@@ -308,13 +297,13 @@ Identity and the contact data of the Supplier of products and/or services (also 
           </p>
         <p> <br />21. Withdrawal of the consent
           <br />
-          Where the processing is based on: i) the consent of the data subject given for processing his/her personal data for one or more specific purposes; or ii) the consent of the data subject given for processing certain special personal data for one or more specified purposes, except where Union or Member State law provide that the prohibition to process special personal data may not be lifted by the data subject,
+          Where the processing is based on: <br />(i) the consent of the data subject given for processing his/her personal data for one or more specific purposes; or <br />(ii) the consent of the data subject given for processing certain special personal data for one or more specified purposes, except where Union or Member State law provide that the prohibition to process special personal data may not be lifted by the data subject,
           the data subject has the right to withdraw the consent at any time, without affecting the lawfulness of processing based on the consent before its withdrawal.
           For the sake of clarity the withdrawal of the consent shall not affect the processing of the personal data based on other legal basis.
           <br /><br />
           22.Cookie Policy
           <br />
-          [Controller’s webs application may use “cookies.”
+          [Controller’s webs application may use “cookies.”]
           <br />
           Cookies are text files containing small amounts of information which are downloaded to your device when you visit and use the web application. Cookies are then sent back to the originating URL on each subsequent visit, or to another URL that recognises that cookie. Cookies are useful because they allow a website to recognise a user’s device. You can find more information about cookies at: www.allaboutcookies.org and www.youronlinechoices.eu . For a video about cookies visit www.google.co.uk/ goodtoknow/data-on-the-web/cookies.
           Cookies do lots of different jobs, like letting you navigate between pages efficiently, remembering your preferences, and generally improve the user experience.
@@ -370,7 +359,7 @@ Identity and the contact data of the Supplier of products and/or services (also 
           <br />
 
 
-          The Provider may also process your personal data as the processor of the supplier of products and/or services, including without limitation for the following purposes, according to those agreed with the suppliers of products and/or services : i) data storage for the suppliers of products and/or services; ii) sending notifications to you regarding the information about confirmation or reject of the order or about the missed orders and about the delivery of your order; iii) sending to you direct marketing communications; iii) collection of the IP addresses in order to be used in case of any litigation and/or fraud regarding the payments; iv) sending your data to different recipients and in different (third) countries, recipients that are processing the personal data for compatible, related and correlated purposes with the purpose of executing the contract you have with the suppliers of products and/or services, namely: delivery, printing, pos billing, loyalty, online payment processing, etc.
+          The Provider may also process your personal data as the processor of the supplier of products and/or services, including without limitation for the following purposes, according to those agreed with the suppliers of products and/or services : <br />(i) data storage for the suppliers of products and/or services;<br /> (ii) sending notifications to you regarding the information about confirmation or reject of the order or about the missed orders and about the delivery of your order;<br /> (iii) sending to you direct marketing communications;<br /> (iii) collection of the IP addresses in order to be used in case of any litigation and/or fraud regarding the payments;<br /> (iv) sending your data to different recipients and in different (third) countries, recipients that are processing the personal data for compatible, related and correlated purposes with the purpose of executing the contract you have with the suppliers of products and/or services, namely: delivery, printing, pos billing, loyalty, online payment processing, etc.
           <br /><br />
           24. Miscellaneous
           <br />
@@ -393,4 +382,4 @@ Identity and the contact data of the Supplier of products and/or services (also 
 
     </div>
   );
-};
+}
