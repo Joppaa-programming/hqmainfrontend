@@ -25,7 +25,7 @@ const About = () => {
             <p className="text-base text-gray-700 mb-6 leading-relaxed">
               If you haven’t already tried Nigerian food, H.Q is the perfect place to begin your education. From the Northern-inspired Suya (grilled beef or lamb) to South Eastern Pounded Yam and Egusi Soup, and the West’s famous Boli (Roasted Plantain), we bring Nigerian food, culture, and atmosphere to your doorstep.
             </p>
-            <Link href={'/menu'} target="_blank" className='  mb-6  font-bold right-24 w-32  text-red-500 border text-center  py-1 hover:text-lg rounded-sm'   > Order online</Link>
+            <Link href={'https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781'} target="_blank" className='  mb-6  font-bold right-24 w-32  text-red-500 border text-center  py-1 hover:text-green-500 rounded-sm'   > Order online</Link>
 </div>
             <h3 className="text-lg font-semibold text-black mb-4">Tailored to Your Taste</h3>
             <p className="text-base text-gray-700 mb-6 leading-relaxed">
