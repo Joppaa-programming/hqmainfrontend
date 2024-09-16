@@ -305,7 +305,13 @@
       { "name": "Fried plantain", "price": "3.50" },
       { "name": "Yam Chips", "price": "3.50" },
       { "name": "Potato Chips", "price": "3.50" },
-      { "name": "Sweet Potato Chips", "price": "3.50" },
+      { "name": "Sweet Potato Chips", "price": "3.50" }
+    
+    ],
+    "Single Dishes": [
+      { "name": "Boiled/Fried Egg", "price": "4.00" },
+      { "name": "Boli (Roasted Plantain)", "price": "6.00" },
+      { "name": "Egg Sauce", "price": "5.00" },
       { "name": "Groundnut", "price": "3.50" },
       { "name": "House Hot Sauce", "price": "1.00" },
       { "name": "House Mild Sauce", "price": "1.25" },
@@ -317,11 +323,6 @@
       { "name": "Roasted corn", "price": "4.00" },
       { "name": "Fried Hake Fish", "price": "5.00" },
       { "name": "Fried Beef", "price": "5.00" }
-    ],
-    "Single": [
-      { "name": "Boiled/Fried Egg", "price": "4.00" },
-      { "name": "Boli (Roasted Plantain)", "price": "6.00" },
-      { "name": "Egg Sauce", "price": "5.00" }
     ]
   }
 }
