@@ -1,7 +1,7 @@
 "use client"
 import Image from 'next/image'
 import React, { useEffect, useRef, useState } from 'react'
-
+import { FaArrowAltCircleLeft,FaArrowAltCircleRight } from "react-icons/fa"
 export default function ImageCarousel({data}) {
 
    
@@ -44,16 +44,16 @@ data.map((v,i) =>{
                 <button
                   disabled={currentImg == 0}
                   onClick={() => setCurrentImg((prev) => prev - 1)}
-                  className={` text-2xl px-4 py-2 rounded-md font-bold ${currentImg == 0 && 'opacity-50'}`}
+                  className={` text-3xl text-black px-4 py-2  rounded-md font-bold ${currentImg == 0 && 'opacity-50'}`}
                 >
-                  {'<'}
+               <FaArrowAltCircleLeft />
                 </button>
                 <button
                   disabled={currentImg == data.length - 1}
-                  className={`text-2xl px-4 py-2 font-bold ${currentImg == data.length - 1 && 'opacity-50'}`}
+                  className={`text-3xl text-black  px-4 py-2 font-bold ${currentImg == data.length - 1 && 'opacity-50'}`}
                   onClick={() => setCurrentImg((prev) => prev + 1)}
                 >
-                  {'>'}
+                <FaArrowAltCircleRight />
                 </button>
               </div>
             </>

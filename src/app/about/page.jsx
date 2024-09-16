@@ -7,7 +7,7 @@ const About = () => {
     <div className="min-h-screen  py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white shadow-xl rounded-lg overflow-hidden">
-       <Reusehero title={""} parag={""}/>
+       <Reusehero title={"About H.Q"} parag={""}/>
 
           <div className="p-8 md:p-12">
         <div className="  w-full">
