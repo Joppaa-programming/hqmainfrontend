@@ -21,7 +21,7 @@ export default function Hero() {
       <div className='absolute text-white flex flex-col justify-center items-center'>
         <div className="flex flex-col gap-4 text-center pb-3">
           <h1 className="drop-shadow-md  font-bold text-3xl md:text-4xl "> Home of
-            Nigerian Cuisine</h1>
+            Nigerian Cuisines</h1>
           <h1 className="drop-shadow-md font-medium text-lg ">in Manchester </h1>
        
         </div>   <Link href={orderlink} target="_blank" className="bg-white text-black text-xl hover:text-red-500 py-2 px-4 rounded-sm ">

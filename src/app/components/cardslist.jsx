@@ -48,7 +48,7 @@ export default function CardsList() {
                     style={{ objectFit: "cover" }} />
                 <div className=" flex flex-col justify-center items-center gap-4">
                     <Image className=" " src="/ngflag.png" width={80} height={80} alt="nigeriaflag" />
-                    <div className='flex gap-2   flex-col sm:h-[400px] md:flex-row'>
+                    <div className='flex gap-2   flex-col  md:flex-row'>
                         {cards.map((card, index) => (<div id={index} key={index}><Card heading={card.heading} target={card.target} cta={card.cta} info={card.info} /></div>))}
                     </div>
                 </div>
