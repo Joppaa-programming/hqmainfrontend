@@ -7,11 +7,11 @@ const About = () => {
     <div className="min-h-screen  py-12">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="bg-white shadow-xl rounded-lg overflow-hidden">
-       <Reusehero title={"About H.Q."} parag={"Welcome to H.Q Nigerian Restaurant"}/>
+       <Reusehero title={""} parag={""}/>
 
           <div className="p-8 md:p-12">
         <div className="  w-full">
-          
+        <h3 className="text-lg font-semibold text-black mb-4">About Us</h3>
             <p className="text-lg text-gray-700 mb-6 leading-relaxed">
               We are a family-owned Nigerian Restaurant located in the heart of Fallowfield, Manchester. Our roots come from Benin City, Edo State, Nigeria, and we aim to become the Headquarters for all things Nigeria, starting with our delicious food.
             </p>

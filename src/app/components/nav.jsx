@@ -29,19 +29,17 @@ export default function Nav() {
             alt="Picture of the author"
           />
         </Link>
-        <div className=' pt-3 mb-2 justify-start text-center gap-5 items-center hidden md:flex'>
-        {menuItems.map(([text, url], i) => (
-            <Link onClick={handleNav} key={i} href={url} className='hover:text-green-400 focus:underline underline-offset-8 px-2 text-lg uppercase '> {text}</Link>))}
-            <div className=' pt-3 mb-2 justify-start text-center text-green-400 hidden md:flex'>
+        <div className=' pt-3 mb-2 justify-center  text-center gap-5 items-center hidden md:flex w-[600px]'>
+            <div className=' pt-3 mb-2 justify-evenly text-2xl text-center text-green-400 hidden md:flex w-full'>
                     <Link target="_blank" href={'https://www.facebook.com/hqmanchester'}><FaFacebookF className='text-xl mr-5' /></Link> 
                     <Link target="_blank" href={'https://www.instagram.com/hqmanchester/'}><FaInstagram className='text-xl mr-5 ' /></Link> 
                      <Link target="_blank" href={'https://www.tiktok.com/@hqmanchester/'}><FaTiktok  className='text-xl mr-5' /></Link>
                     </div>
 </div>
 
-        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24 md:right-12 w-44  uppercase text-center px-4 py-1 hover:text-lg rounded-sm'   > Order online</Link><div></div>
+        <Link href={orderlink} target="_blank" className=' bg-red-600 absolute font-bold right-24  w-44  uppercase text-center px-4 py-1 hover:text-lg rounded-sm'   > Order online</Link><div></div>
         <div onClick={handleNav} className=' h-[55px] w-[55px]  items-center flex justify-center text-2xl  relative'>
-        {navbar == false ? <FaBars className='hover:text-green-500 md:hidden' /> : <FaWindowClose className='hover:text-red-500' /> }
+        {navbar == false ? <FaBars className='hover:text-green-500 ' /> : <FaWindowClose className='hover:text-red-500' /> }
         </div>
 
       </div>
