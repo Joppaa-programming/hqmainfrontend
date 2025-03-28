@@ -11,7 +11,7 @@ export default function Nav() {
   const orderlink = "https://www.pronto-food-online.com/ordering/restaurant/menu?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&glfa_cid=1694974390.1601939947&glfa_t=1601940069781"
   const reserveLink = "https://www.pronto-food-online.com/ordering/restaurant/menu/reservation?restaurant_uid=175b2cdb-5680-4673-b025-59f548105410&reservation=true&glfa_cid=1277109742.1603227119&glfa_t=1603227121089"
   const menuItems = [
-    ['Call H.Q', 'tel:01614255080'],
+    ['Call H.Q', 'tel:01617061472'],
     ['About H.Q', '/about'],
     ['H.Q Menu', '/menu'],
     // ['Order online', orderlink],
@@ -59,7 +59,7 @@ export default function Nav() {
                     <p className=''>  H.Q  <br /> 317 Wilmslow Rd, Fallowfield,<br />Manchester<br />
                         M14 6NW </p>
                     <span className='mt-3'>
-                        0161 425 5080  <br /> 
+                    0161 706 1472  <br /> 
                     </span>
                     <div className='flex pt-3 mb-2 justify-start text-center text-green-400'>
                     <Link target="_blank" href={'https://www.facebook.com/hqmanchester'}><FaFacebookF className='text-xl mr-5' /></Link> 

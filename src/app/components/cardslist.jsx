@@ -25,7 +25,7 @@ const cards = [
         "info": "Plan ahead and get your Jollof to-go from H.Q. A checky skip of the queue.",
         "cta": {
             "text": "CALL US",
-            "link": "tel:01614255080"
+            "link": "tel:01617061472"
         },
         "target": "parent",
     },

@@ -76,7 +76,7 @@
         "description": "Yam flour mixed in boiling water."
       }
     ],
-    "Stews": [
+    "Stew dishes": [
       {
         "name": "Ayamase Stew",
         "price": "8.00",
@@ -98,7 +98,7 @@
         "description": "Chunk of beef sauteed in our Chef's special sweet pepper sauce"
       },
       {
-        "name": "Efo Riro",
+        "name": "Vegetable Stew AKA Efo Riro",
         "price": "8.50",
         "description": "A special mix of chopped green leaves sautéed in out chef's tomato sauce served with Chopped beef and Smoked turkey"
       }
@@ -308,14 +308,14 @@
       { "name": "Sweet Potato Chips", "price": "3.50" }
     
     ],
-    "Single Dishes": [
+    "Single dishes": [
       { "name": "Boiled/Fried Egg", "price": "4.00" },
       { "name": "Boli (Roasted Plantain)", "price": "6.00" },
       { "name": "Egg Sauce", "price": "5.00" },
       { "name": "Groundnut", "price": "3.50" },
       { "name": "House Hot Sauce", "price": "1.00" },
       { "name": "House Mild Sauce", "price": "1.25" },
-      { "name": "Salad Bowl", "price": "1.25" },
+      { "name": "Salad Bowl", "price": "4.00" },
       { "name": "Oil Beans", "price": "4.00" },
       { "name": "2 Roast Chicken Leg", "price": "6.00" },
       { "name": "Moi Moi / Beans Cake", "price": "4.00" },

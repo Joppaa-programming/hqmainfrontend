@@ -90,7 +90,7 @@ export default function Footer() {
                         Manchester
                         <br />M14 6NW </p>
                     <span className='mt-3'><p>H.Q</p>
-                        0161 425 5080
+                    0161 706 1472
                     </span>
                     <div className='flex pt-3 justify-start text-center text-green-400'>
                         <Link href={'https://www.facebook.com/hqmanchester'}><FaFacebookF className='text-xl mr-5' /></Link>
